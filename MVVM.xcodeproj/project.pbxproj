@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		180F40441F5CFAAA003C5B5E /* Safari 桌面图片.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180F40431F5CFAAA003C5B5E /* Safari 桌面图片.jpg */; };
+		180F40491F5D2A7E003C5B5E /* testTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F40481F5D2A7E003C5B5E /* testTableView.swift */; };
+		180F404B1F5D2AA4003C5B5E /* testTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F404A1F5D2AA4003C5B5E /* testTableViewModel.swift */; };
+		180F404E1F5D301C003C5B5E /* testBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F404D1F5D301C003C5B5E /* testBarItem.swift */; };
+		180F40501F5D3038003C5B5E /* testBarItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F404F1F5D3038003C5B5E /* testBarItemModel.swift */; };
+		180F40521F5D34B6003C5B5E /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180F40511F5D34B6003C5B5E /* secondViewController.swift */; };
 		18A8D9501F5C4E4F007434C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8D94F1F5C4E4F007434C1 /* AppDelegate.swift */; };
 		18A8D9521F5C4E4F007434C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8D9511F5C4E4F007434C1 /* ViewController.swift */; };
 		18A8D9551F5C4E4F007434C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A8D9531F5C4E4F007434C1 /* Main.storyboard */; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		180F40431F5CFAAA003C5B5E /* Safari 桌面图片.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Safari 桌面图片.jpg"; sourceTree = "<group>"; };
+		180F40481F5D2A7E003C5B5E /* testTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testTableView.swift; sourceTree = "<group>"; };
+		180F404A1F5D2AA4003C5B5E /* testTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testTableViewModel.swift; sourceTree = "<group>"; };
+		180F404D1F5D301C003C5B5E /* testBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testBarItem.swift; sourceTree = "<group>"; };
+		180F404F1F5D3038003C5B5E /* testBarItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testBarItemModel.swift; sourceTree = "<group>"; };
+		180F40511F5D34B6003C5B5E /* secondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		18A8D94C1F5C4E4F007434C1 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A8D94F1F5C4E4F007434C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A8D9511F5C4E4F007434C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +86,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180F40451F5D2A47003C5B5E /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				180F404A1F5D2AA4003C5B5E /* testTableViewModel.swift */,
+				180F404F1F5D3038003C5B5E /* testBarItemModel.swift */,
+			);
+			name = VM;
+			sourceTree = "<group>";
+		};
+		180F40461F5D2A4E003C5B5E /* V */ = {
+			isa = PBXGroup;
+			children = (
+				180F40481F5D2A7E003C5B5E /* testTableView.swift */,
+				180F404D1F5D301C003C5B5E /* testBarItem.swift */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		180F40471F5D2A53003C5B5E /* C */ = {
+			isa = PBXGroup;
+			children = (
+				18A8D9511F5C4E4F007434C1 /* ViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		180F404C1F5D2ACC003C5B5E /* Storyborad */ = {
+			isa = PBXGroup;
+			children = (
+				18A8D9531F5C4E4F007434C1 /* Main.storyboard */,
+			);
+			name = Storyborad;
+			sourceTree = "<group>";
+		};
 		18A8D9431F5C4E4F007434C1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +143,16 @@
 		18A8D94E1F5C4E4F007434C1 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				180F404C1F5D2ACC003C5B5E /* Storyborad */,
+				180F40471F5D2A53003C5B5E /* C */,
+				180F40461F5D2A4E003C5B5E /* V */,
+				180F40451F5D2A47003C5B5E /* VM */,
 				18A8D94F1F5C4E4F007434C1 /* AppDelegate.swift */,
-				18A8D9511F5C4E4F007434C1 /* ViewController.swift */,
-				18A8D9531F5C4E4F007434C1 /* Main.storyboard */,
 				18A8D9561F5C4E4F007434C1 /* Assets.xcassets */,
 				180F40431F5CFAAA003C5B5E /* Safari 桌面图片.jpg */,
 				18A8D9581F5C4E4F007434C1 /* LaunchScreen.storyboard */,
 				18A8D95B1F5C4E4F007434C1 /* Info.plist */,
+				180F40511F5D34B6003C5B5E /* secondViewController.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -263,8 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180F404E1F5D301C003C5B5E /* testBarItem.swift in Sources */,
+				180F40521F5D34B6003C5B5E /* secondViewController.swift in Sources */,
+				180F40491F5D2A7E003C5B5E /* testTableView.swift in Sources */,
 				18A8D9521F5C4E4F007434C1 /* ViewController.swift in Sources */,
 				18A8D9501F5C4E4F007434C1 /* AppDelegate.swift in Sources */,
+				180F40501F5D3038003C5B5E /* testBarItemModel.swift in Sources */,
+				180F404B1F5D2AA4003C5B5E /* testTableViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
