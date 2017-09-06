@@ -10,7 +10,7 @@ import UIKit
 
 class testBarItemModel: NSObject {
     
-    var targat:testBarItem?
+    weak var targat:testBarItem?
     
     func click() -> Void {
         print("click")

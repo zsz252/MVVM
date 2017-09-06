@@ -10,7 +10,7 @@ import UIKit
 
 class testTableViewModel: NSObject,UITableViewDelegate,UITableViewDataSource {
 
-    var target:testTableView!
+    weak var target:testTableView!
     
     let testValue:NSString = "这是测试内容\n这是测试内容\n这是测试内容\n这是测试内容\n这是测试内容\n这是测试内容\n这是测试内容\n这是测试内容\n这是测试内容\n"
     
